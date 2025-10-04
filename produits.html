@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produits - Ariane's BAKERY</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="container nav-container">
+                <img src="images/WhatsApp Image 2025-07-28 à 16.02.13_fdab62d3.jpg" alt="Macarons" class="img-arrondie">
+                <div class="logo">🍰 Ariane's BAKERY</div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="produits.html" class="active">Produits</a></li>
+                    <li><a href="panier.html">Panier</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Produits -->
+    <section id="produits">
+        <div class="produit-card">
+            <img src="images/cupcake.jpg" alt="Cupcake">
+            <h3>Cupcake</h3>
+            <p>Délicieux cupcake à la vanille</p>
+            <p><strong>Prix :</strong> 1500 FCFA</p>
+            <button onclick="ajouterAuPanier('Cupcake', 1500)">Commander</button>
+        </div>
+
+        <div class="produit-card">
+            <img src="images/Tarte-aux-fruits.jpg" alt="Tarte">
+            <h3>Tarte aux fruits</h3>
+            <p>Fruits frais sur pâte croustillante</p>
+            <p><strong>Prix :</strong> 2000 FCFA</p>
+            <button onclick="ajouterAuPanier('Tarte aux fruits', 2000)">Commander</button>
+        </div>
+
+        <div class="produit-card">
+            <img src="images/Macaron.jpg" alt="Macaron">
+            <h3>Macaron</h3>
+            <p>Assortiment de macarons</p>
+            <p><strong>Prix :</strong> 2500 FCFA</p>
+            <button onclick="ajouterAuPanier('Macaron', 2500)">Commander</button>
+        </div>
+    </section>
+
+    <!-- Chatbot -->
+    <div class="chatbot" id="chatbot">
+        <div class="chat-header">🤖 Chatbot Douceur</div>
+        <div class="chat-messages" id="chat-messages"></div>
+        <input type="text" id="chat-input" placeholder="Posez votre question..." />
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Ariane's BAKERY</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
